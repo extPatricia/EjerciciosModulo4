@@ -8,7 +8,7 @@ public class Conductor : MonoBehaviour
     public string conductorName;
 
     // Private variables
-    [SerializeField] private Melody currentMelody;
+    [SerializeField] private Melody _currentMelody;
 
     void Start()
     {
@@ -17,15 +17,15 @@ public class Conductor : MonoBehaviour
 
     public void SetMelody(Melody melody)
     {
-        currentMelody = melody;
+        _currentMelody = melody;
     }
 
     public void StartConcert()
     {
-        if (currentMelody != null)
+        if (_currentMelody != null)
         {
-            Debug.Log("Conductor " + conductorName + " is starting the concert with melody " + currentMelody.melodyName);
-            currentMelody.PlayMelody();
+            Debug.Log("Conductor " + conductorName + " is starting the concert with melody " + _currentMelody.melodyName);
+            _currentMelody.PlayMelody();
         }
     }
 }

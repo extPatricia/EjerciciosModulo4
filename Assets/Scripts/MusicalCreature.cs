@@ -8,21 +8,21 @@ public class MusicalCreature : MonoBehaviour
     public string creatureName;
 
     // Private variables
-    [SerializeField] private float toneFrequency = 1f;
-    [SerializeField] private float volumeLevel = 1f;
+    [SerializeField] private float _toneFrequency = 1f;
+    [SerializeField] private float _volumeLevel = 1f;
 
     public void PlaySound()
     {
-        Debug.Log("" + creatureName + " is playing a sound at " + toneFrequency + " Hz with volume " + volumeLevel + " ");
+        Debug.Log("" + creatureName + " is playing a sound at " + _toneFrequency + " Hz with volume " + _volumeLevel + " ");
     }
 
     public float GetToneFrequency()
     {
-        return toneFrequency;
+        return _toneFrequency;
     }
 
     public float GetVolumeLevel()
     {
-        return volumeLevel;
+        return _volumeLevel;
     }
 }
