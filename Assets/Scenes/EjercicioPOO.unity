@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conductorName: Lira
-  currentMelody: {fileID: 705649234}
+  _currentMelody: {fileID: 705649234}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,9 +308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   melodyName: "Sinfon\xEDa del Bosque"
-  creatures:
-  - {fileID: 2067230225}
+  _creatures:
   - {fileID: 1679658536}
+  - {fileID: 2067230225}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,8 +440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Birb
-  toneFrequency: 1
-  volumeLevel: 1
+  _toneFrequency: 1
+  _volumeLevel: 1
 --- !u!1 &2067230223
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,5 +487,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creatureName: Froggo
-  toneFrequency: 1
-  volumeLevel: 1
+  _toneFrequency: 1
+  _volumeLevel: 1
